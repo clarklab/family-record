@@ -6,13 +6,19 @@ image: /images/uploads/homepage-hero.webp
 ---
 Hey folks! This is Family Record, a simple way to archive family audio and video recordings. It's self-hosted, static-file-based, and completely customizable.
 
-H﻿ere are some of the basic features:
+Here are some of the basic features:
 
-* S﻿upports audio and video files
-* S﻿imple content and blog tools built in
-* S﻿end a link, play the recording, no accounts or apps
-* G﻿reat for in-laws and app-averse crowds
+* Supports audio and video files
+* Simple content and blog tools built in
+* Send a link, play the recording, no accounts or apps
+* Great for in-laws and app-averse crowds
 
-S﻿o how does this work under the hood? I'm glad you asked!
+So how does this work under the hood? I'm glad you asked!
 
-* Static site b﻿uilt by [Middleman](https://middlemanapp.com/) 
+* Static site built by [Middleman](https://middlemanapp.com/)
+* Source on [GitHub](https://github.com/clarklab/family-record), deployed and hosted by [Netlify](https://netlify.com) (both free)
+* Works with MP3 (audio) and MP4 (video), more formats soon
+* Mobile-ready, HTML-only media players
+* Flat files, keep all you original recording files
+
+This is a quick first release, keep an eye out for future releases. If you want to pitch in, contact <a href="https://twitter.com/clarklab">@clarklab</a>.
