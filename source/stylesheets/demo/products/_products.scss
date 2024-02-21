@@ -11,14 +11,16 @@
     @extend %column;
     @extend %col-sm-4;
     @extend %product;
+    padding-left:25px;
+    padding-right:25px;
   }
 
   @media screen and (max-width: $screen-xs-max) {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     h2 {
-      margin: 0 0 15px;
+      margin: 25px 10px 25px;
     }
   }
 }

@@ -1,16 +1,13 @@
 //link to product by converting the title to a slug
 .product
-  = link_to '/product/' + product.title.parameterize + '/'
-    .product-image
-      = image_tag product.image
+  = link_to '/recording/' + product.title.parameterize + '/'
+    .product-image style="background-image:url(#{image_path(product.image)})"
     .product-content
       .title
         h3 = product.title
-      .price
-        p 
-          - currency = data.settings.units.currency || '€' 
-          = currency + product.price.to_s 
-      .weight
-        p 
-          - weight = data.settings.units.weight || 'kg'
-          = product.weight.to_s + weight
+      .date
+        - date = Date.parse product.date.to_s
+        - if product.fuzzy
+          span.recorded.small = product.fuzzy
+        - else
+          span.recorded.small = date.strftime("%b, %d, %Y")

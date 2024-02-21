@@ -1,16 +1,26 @@
 .product-detail
-  .image style=background_image(image_path(product.image))
+  .image
+    - if "#{product.file}".include? "mp4"
+        video controls="" poster="#{product.file}.gif"
+          source src="#{product.file}" type="video/mp4"
+          | Your browser does not support the audio element.
+    img.styled src="#{image_path(product.image)}"
   .content
     .meta
       h1 = product.title
 
-      .weight
-        - weight = data.settings.units.weight || 'kg'
-        span = product.weight.to_s + weight
-
-      .price
-        - currency = data.settings.units.currency || '€' 
-        span = currency + product.price.to_s 
+      .date
+        - date = Date.parse product.date.to_s
+        - if product.fuzzy
+          span.recorded = product.fuzzy
+        - else
+          span.recorded = date.strftime("%b, %d, %Y") 
 
     .body
+
       = markdown product.body
+
+      - if "#{product.file}".include? "mp3"
+        audio controls=""
+          source src="#{product.file}" type="audio/mpeg"
+          | Your browser does not support the audio element.
