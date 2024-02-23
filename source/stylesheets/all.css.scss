@@ -124,10 +124,6 @@ audio{
 
 audio::-webkit-media-controls-time-remaining-display { display: none !important; }
 
-
-.header-primary{
-}
-
 .tophat{
 	width:100%;
 	background:#000;
@@ -135,5 +131,11 @@ audio::-webkit-media-controls-time-remaining-display { display: none !important;
 	text-align:center;
 	padding:8px;
 	box-sizing:border-box;
+}
+
+.tophat a{
+	color:#fff;
+	font-weight:bold;
+	text-decoration:underline;
 }
 
