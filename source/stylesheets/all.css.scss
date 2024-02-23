@@ -141,8 +141,8 @@ audio::-webkit-media-controls-time-remaining-display { display: none !important;
 
 .button{
 	background:$primary-color;
-	color:#fff;
-	padding:.5rem .8rem;
+	color:#fff !important;
+	padding:1rem 1rem;
 	display:inline-block
 }
 
