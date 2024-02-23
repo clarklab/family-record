@@ -6,6 +6,8 @@ image: /images/uploads/post-welcome.svg
 ---
 Hey folks! This is Family Record, a simple way to archive family audio and video recordings. It's self-hosted, static-file-based, and completely customizable.
 
+<a href="https://github.com/clarklab/family-record" class="button">Source on GitHub</a>
+
 Here are some of the basic features:
 
 * Supports audio and video files
