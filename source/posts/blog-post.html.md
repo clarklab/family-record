@@ -2,7 +2,7 @@
 title: Welcome to Family Record!
 date: 2024-02-21T04:51:07.203Z
 description: A simple way to archive family audio and video recordings.
-image: /images/uploads/homepage-hero.webp
+image: /images/uploads/post-welcome.svg
 ---
 Hey folks! This is Family Record, a simple way to archive family audio and video recordings. It's self-hosted, static-file-based, and completely customizable.
 
