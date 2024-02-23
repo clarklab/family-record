@@ -125,4 +125,18 @@ audio{
 audio::-webkit-media-controls-time-remaining-display { display: none !important; }
 
 
-
+.header-primary{
+	padding-top:80px;
+}
+.tophat{
+	height:80px;
+	position:fixed;
+	background:#000;
+	color:#fff
+	text-align:center;
+	padding:8px;
+	box-sizing:border-box;
+	left:0;
+	right:0;
+	top:0;
+}
