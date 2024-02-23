@@ -139,3 +139,10 @@ audio::-webkit-media-controls-time-remaining-display { display: none !important;
 	text-decoration:underline;
 }
 
+.button{
+	background:$primary-color;
+	color:#fff;
+	padding:.5rem .8rem;
+	display:inline-block
+}
+
