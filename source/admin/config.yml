@@ -21,7 +21,12 @@ collections:
       - {label: Image, name: image, widget: image, required: false}
 
       - {label: File, name: file, widget: file}
+      - label: "Branch"
+        name: "branch"
+        widget: "select"
+        options: ["Smith", "Brown", "Cruz"]
       - {label: Body, name: body, widget: markdown, required: false}
+
 
 #markdown middleman blog example
   - name: blog
